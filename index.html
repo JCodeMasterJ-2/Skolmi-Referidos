@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        HOLIWIS
-    </h1>
-</body>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skolmi: Educacion virtual</title>
+        <link rel="icon" href="./logo.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <a href="#">Ingresar a Plataforma</a>
+                <a href="#">Pagos</a>
+                <a href="#">Contacto</a>
+            </div>
+            <aside>
+                <img src="https://www.skolmi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fskolmilogo1.5f8bce00.png&w=1920&q=75" alt="logo">
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Oferta educativa</li>
+                    <li>Bienestar estudiantil</li>
+                </ul>
+            </aside>
+        </header>
+
+        <section>
+            <form>
+                <label>¿Necesitas ayuda?</label>
+                <input type="text" placeholder="Tu nombre">
+                <input type="number" placeholder="Celular">
+                <input type="email" placeholder="Correo electrónico">
+                <select>
+                    <option value="" disabled hidden selected>Programa interesado</option>
+                    <option value="Preescolar">Preescolar</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Bachillerato">Bachillerato</option>
+                    <option value="Adultos">Adultos</option>
+                </select>
+                <select>
+                    <option value="" disabled hidden selected>Referido</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+                <input type="text" placeholder="Codigo de referido" hidden>
+            </form>
+        </section>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
