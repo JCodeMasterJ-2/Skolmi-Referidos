@@ -39,19 +39,19 @@
 
         <section class="registro-referido">
             <img src="https://www.skolmi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBANNERS-DICIEMBRE-01-1920x550.1ed0930b.png&w=3840&q=75" alt="fondo">
-            <form action="/post" method="post">
+            <form action="/post" method="post" id="inscripcion">
                 <label>¿Necesitas ayuda?</label>
-                <input id="name" name="name" type="text" placeholder="Tu nombre">
-                <input id="phone" name="phone" type="text" placeholder="Celular">
-                <input id="email" name="email" type="email" placeholder="Correo electrónico">
-                <select id="program" name="program">
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+                <input id="phone" name="phone" type="text"  pattern="[0-9]+" placeholder="Celular" required>
+                <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
+                <select id="program" name="program" required>
                     <option value="" disabled hidden selected>Programa interesado</option>
                     <option value="Preescolar">Preescolar</option>
                     <option value="Primaria">Primaria</option>
                     <option value="Bachillerato">Bachillerato</option>
                     <option value="Adultos">Adultos</option>
                 </select>
-                <select id="verificar-referido">
+                <select id="verificar-referido" required>
                     <option value="" disabled hidden selected>Referido</option>
                     <option value="Si">Si</option>
                     <option value="No">No</option>

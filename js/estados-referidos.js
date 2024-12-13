@@ -1,6 +1,8 @@
 function enviarDatos() {
     // Obtener el nombre
-    const datos = document.getElementById('datos').textContent;
+    const nombre = document.getElementById('nombre').textContent;
+    const telefono = document.getElementById('telefono').textContent;
+    const correo = document.getElementById('correo').textContent;
 
     // Obtener el estado de los checkboxes
     const inscrito = document.getElementById('check-inscrito').checked;
@@ -31,8 +33,10 @@ function enviarDatos() {
     const texto = `
         <div class="container-referidos">
             <div>
-                <h2>${datos}</h2>
+                <h2 class="header-card">${nombre}</h2>
                 <div class="container-referidos-info">
+                <p>${telefono}</p>
+                <p>${correo}</p>
                     <div>
                         <h3>Estado:</h3>
                         <p>${estado}</p>
@@ -45,5 +49,5 @@ function enviarDatos() {
         </div>
     `;
     
-    // localStorage.setItem('referidoData', texto);
+    localStorage.setItem('referidoData', texto);
 }

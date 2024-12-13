@@ -1,5 +1,9 @@
+// Recuperar los datos del localStorage
+const referidoData = localStorage.getItem('referidoData');
+
 let codigo = document.getElementById('codigo-referido');
-let referidos = document.querySelectorAll('.container-referidos div h2');
+let referidos = document.querySelectorAll('.header-card');
+
 
 /* Generar Codigo */
 function generarCodigoAlfanumerico(n) {
@@ -16,7 +20,7 @@ function generarCodigoAlfanumerico(n) {
 
 const codigoGenerado = generarCodigoAlfanumerico(10);
 
-codigo.textContent = codigoGenerado;
+// codigo.textContent = codigoGenerado;
 
 /* Copiar Texto */
 document.getElementById('boton-copiar').addEventListener('click', e => {
@@ -36,9 +40,6 @@ referidos.forEach(referido => {
         referidoInfo.hidden = !referidoInfo.hidden;
     })
 })
-
-// Recuperar los datos del localStorage
-const referidoData = localStorage.getItem('referidoData');
 
 // Si hay datos, mostrarlo en el contenedor
 if (referidoData) {

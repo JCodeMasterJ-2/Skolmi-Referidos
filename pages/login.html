@@ -35,17 +35,19 @@
         
         <section class="container">
             <div class="container-card">
-                <div class="container-card-login">
-                    <input type="text" placeholder="Nombre de usuario">
-                    <input type="password" placeholder="Contraseña" value="">
+                <form action="/user" method="post" class="container-card-login">
+                    <input id="name" name="name" type="text" placeholder="Nombre de usuario" required>
+                    <input id="password" name="password" type="password" placeholder="Contraseña" value="" required>
                     <label class="container-card-login-check"><input type="checkbox">Recordar nombre de usuario</label>
                     <input class="container-card-login-boton" type="submit" value="Acceder">
-                </div>
+                </form>
                 <div class="container-card-info">
                     <p>¿Olvidó su nombre de usuario o contraseña?</p>
                     <p>Las 'Cookies' deben estar habilitadas en su navegador</p>
                 </div>
             </div>
         </section>
+
+        <script src="../js/login.js"></script>
     </body>
 </html>
