@@ -160,7 +160,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00194A;
+    background-color: #FCE9A9;
 }
 
 .container-card {
@@ -201,6 +201,7 @@ header nav ul li a:hover {
 
 .usuario {
     padding-top: 120px;
+    background-color: #FCE9A9;
 }
 
 .usuario h1 {
@@ -306,4 +307,63 @@ header nav ul li a:hover {
     text-align: center;
     font-weight: 600;
     border-radius: 10px;
+}
+
+/* estados-referidos.html */
+
+.container-admin {
+    padding: 120px 0 20px 0;
+    width: 100%;
+    background-color: #FCE9A9;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 50%;
+}
+
+td:nth-child(1) {
+    text-align: left;
+    font-weight: 500;
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.checkbox::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox:checked::before {
+    background-color: #4CAF50;
+}
+
+.checkbox:hover::before {
+    border-color: #676767;
 }

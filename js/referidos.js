@@ -36,3 +36,13 @@ referidos.forEach(referido => {
         referidoInfo.hidden = !referidoInfo.hidden;
     })
 })
+
+// Recuperar los datos del localStorage
+const referidoData = localStorage.getItem('referidoData');
+
+// Si hay datos, mostrarlo en el contenedor
+if (referidoData) {
+    document.getElementById('referido-container').innerHTML = referidoData;
+} else {
+    document.getElementById('referido-container').innerHTML = '<p>No se encontró información de referido.</p>';
+}

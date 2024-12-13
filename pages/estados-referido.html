@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="header">
-                <h2>Admin</h2>
+                <h1>Admin</h1>
                 <div>
                     <a href="#">Pagos</a>
                     <a href="#">Contacto</a>
@@ -33,7 +33,7 @@
             </nav>
         </header>
         
-        <section class="container">
+        <section class="container-admin">
             <table>
                 <tr>
                     <th>Datos</th>
@@ -43,13 +43,14 @@
                     <th>Matriculado</th>
                 </tr>
                 <tr>
-                    <td>Juanita</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
+                    <td><p id="datos">Juanita</p></td>
+                    <td><input id="check-inscrito" class="checkbox" type="checkbox" checked onclick="enviarDatos()" ></td>
+                    <td><input id="check-notificado" class="checkbox" type="checkbox" onclick="enviarDatos()" ></td>
+                    <td><input id="check-pago" class="checkbox" type="checkbox" onclick="enviarDatos()" ></td>
+                    <td><input id="check-matriculado" class="checkbox" type="checkbox" onclick="enviarDatos()" ></td>
                 </tr>
             </table>
         </section>
+        <script src="../js/estados-referidos.js"></script>
     </body>
 </html>
