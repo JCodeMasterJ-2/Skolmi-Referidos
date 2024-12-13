@@ -25,7 +25,7 @@ const Users = mongoose.model("data",userSchema)
 
 
 app.get('/form', (req, res) => { //Se tiene que poner en el buscador => http://localhost:3019/form
-    res.sendFile(path.join(__dirname, 'form.html'))
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 app.post('/post',async(req,res)=>{

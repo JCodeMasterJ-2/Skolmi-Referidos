@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
 
     <body>
@@ -38,24 +39,24 @@
 
         <section class="registro-referido">
             <img src="https://www.skolmi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBANNERS-DICIEMBRE-01-1920x550.1ed0930b.png&w=3840&q=75" alt="fondo">
-            <form>
+            <form action="/post" method="post">
                 <label>¿Necesitas ayuda?</label>
-                <input type="text" placeholder="Tu nombre">
-                <input type="text" placeholder="Celular">
-                <input type="email" placeholder="Correo electrónico">
-                <select>
+                <input id="name" name="name" type="text" placeholder="Tu nombre">
+                <input id="phone" name="phone" type="text" placeholder="Celular">
+                <input id="email" name="email" type="email" placeholder="Correo electrónico">
+                <select id="program" name="program">
                     <option value="" disabled hidden selected>Programa interesado</option>
                     <option value="Preescolar">Preescolar</option>
                     <option value="Primaria">Primaria</option>
                     <option value="Bachillerato">Bachillerato</option>
                     <option value="Adultos">Adultos</option>
                 </select>
-                <select>
+                <select id="verificar-referido">
                     <option value="" disabled hidden selected>Referido</option>
                     <option value="Si">Si</option>
                     <option value="No">No</option>
                 </select>
-                <input type="text" placeholder="Codigo de referido" hidden>
+                <input id="code" name="code" type="text" placeholder="Codigo de referido" hidden>
                 <input type="submit" value="¡Listo!" class="form-boton">
                 <p>* al hacer click aceptas ser contactado por los medios informados</p>
             </form>

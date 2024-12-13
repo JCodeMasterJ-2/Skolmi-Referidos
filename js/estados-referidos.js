@@ -45,5 +45,5 @@ function enviarDatos() {
         </div>
     `;
     
-    localStorage.setItem('referidoData', texto);
+    // localStorage.setItem('referidoData', texto);
 }
